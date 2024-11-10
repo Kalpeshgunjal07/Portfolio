@@ -1,0 +1,692 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #0E2239;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding-top: 20px;
+    padding-right: 20px;
+    background-color: #0E2239;
+    z-index: 1000; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.portfolio-icon {
+    font-size: 40px;
+    color: #FFCC00;
+    padding-left: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.navbar-links li a {
+    border-radius: 10px;
+    color: #FFCC00;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.navbar-links li a:hover {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: black;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 20px;
+        background-color: #0E2239;
+        align-items: center;
+        border-radius: 5px;
+        padding: 10px;
+        width: 150px;
+    }
+    
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.name {
+    padding-left: 150px;
+    padding-bottom: 10px;
+    font-size: 70px;
+    padding-top: 100px;
+    text-decoration: underline;
+    font-family: "DynaPuff", system-ui;
+}
+
+.para {
+    padding-left: 150px;
+    color: #FFCC00; 
+    font-size: 20px;
+    text-align: inherit;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.social-media-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-top: 15px;
+    padding-left: 100px;
+}
+
+.icon {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icon:hover {
+    color: #0077b5;
+}
+
+.github:hover {
+    color: #333;
+}
+
+.email:hover {
+    color: #ea4335;
+}
+
+.linkedin:hover {
+    color: #0077b5;
+}
+
+.instagram:hover {
+    color: #e4405f;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .social-media-icons {
+        gap: 10px;
+        padding-right: 100px;
+       
+    }
+
+    .icon {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .social-media-icons {
+        gap: 8px; 
+        flex-wrap: wrap; 
+    }
+
+    .icon {
+        font-size: 18px; 
+    }
+}
+.photo {
+    padding-left: 20px;
+    padding-right: 10%;
+    padding-top: 50px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about {
+    width: 100%;
+    background-color: #0E2239;
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.abt {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.skills, .education, .address {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.abt h2, .abt h3 {
+    font-weight: 700;
+    color: #FFCC00;
+    margin-bottom: 15px;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.bio {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: "Jost", sans-serif;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    font-size: 16px;
+    padding: 8px 0;
+}
+
+.skills-list li strong {
+    color: #FFCC00;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 40px 10px;
+    }
+
+    .abt {
+        padding: 30px 10px;
+    }
+
+    .abt h2 {
+        font-size: 32px;
+    }
+
+    .abt h3 {
+        font-size: 20px;
+    }
+
+    .bio, .skills-list li {
+        font-size: 14px;
+    }
+}
+
+.skills-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.skills-section h2 {
+    font-weight: 700;
+    color: #FFCC00;
+    margin-bottom: 35px;
+    text-align: center;
+    font-family: "Playwrite GB S", cursive;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    justify-items: center;
+    padding: 0 20px;
+}
+
+.skill-box {
+    width: 250px;
+    height: 250px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.skill-box:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+.skill-box p {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.projects {
+    width: 100%;
+    padding: 60px 20px;
+    background-color: #0E2239;
+    color: #fff;
+    text-align: center;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+.projects h2{
+    color: #FFCC00;
+    font-family: "Playwrite GB S", cursive;
+    
+}
+.project-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-box h3 {
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.project-box p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.demo-btn {
+    background-color: #28a745;
+}
+
+.github-btn {
+    background-color: #333;
+}
+
+.demo-btn:hover {
+    background-color: #FFCC00;
+    color: #000000;
+}
+
+.github-btn:hover {
+    background-color: #222;
+}
+
+
+/* Contact Section Styling */
+.contact-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0E2239;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: #FFCC00;
+    margin-bottom: 20px;
+    font-family: "Playwrite GB S", cursive;
+    
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Contact Links Styling */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.contact-icon {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+
+.contact-icon i {
+    font-size: 24px;
+}
+
+.contact-icon:hover {
+    color: #FFCC00; 
+}
+
+/* Resume Button Styling */
+.resume-button {
+    margin-top: 30px;
+}
+
+.resume-button button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #FFCC00;
+    color: #0E2239;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resume-button button:hover {
+    background-color: #e6b800;
+}
+/* General adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .name {
+        font-size: 50px;
+        padding-left: 20px;
+        padding-top: 50px;
+    }
+
+    .para {
+        font-size: 18px;
+        padding-left: 20px;
+    }
+
+    .intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo {
+        padding: 20px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* About section adjustments */
+    .about {
+        padding: 30px 15px;
+    }
+
+    .abt {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .about-details {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills, .education, .address {
+        min-width: unset;
+    }
+
+    .abt h2 {
+        font-size: 28px;
+    }
+    
+    .abt h3 {
+        font-size: 20px;
+    }
+    
+    .bio {
+        font-size: 15px;
+    }
+
+    /* Skills section adjustments */
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .skill-box {
+        width: 200px;
+        height: 220px;
+    }
+
+    .skill-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Projects section adjustments */
+    .projects {
+        padding: 30px 15px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-box {
+        padding: 15px;
+    }
+
+    .project-box h3 {
+        font-size: 18px;
+    }
+
+    .project-box p {
+        font-size: 14px;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    /* General font-size adjustments */
+    .name {
+        font-size: 40px;
+        padding: 0;
+    }
+
+    .para {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    /* Navbar adjustments */
+    .navbar-links {
+        width: 100%;
+        top: 50px;
+        right: 0;
+    }
+
+    /* Skills section adjustments */
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-box {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .skill-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Projects section adjustments */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact section adjustments */
+    .contact-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .contact-icon {
+        font-size: 16px;
+    }
+
+    .resume-button button {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+}
+
+
+
+/* Hidden by default */
+.about, .skills-section, .projects, .contact-section, .footer {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Animate when visible */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInSlideUp 1.2s ease-in-out forwards;
+}
+
+/* Keyframes for fade-in and slide-up effect */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* For more variation, add additional animations */
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply different animations to individual sections for variety */
+.about.visible {
+    animation: fadeInSlideUp 1s ease-in-out forwards;
+}
+
+.skills-section.visible {
+    animation: zoomIn 1s ease-in-out forwards;
+}
+
+.projects.visible {
+    animation: fadeInSlideUp 1.2s ease-in-out forwards;
+}
+
+.contact-section.visible {
+    animation: zoomIn 1.2s ease-in-out forwards;
+}
+
+.footer.visible {
+    animation: fadeInSlideUp 1.4s ease-in-out forwards;
+}
+
+
+

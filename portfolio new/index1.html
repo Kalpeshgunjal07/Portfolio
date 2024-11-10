@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@400..700&family=PT+Serif:ital,wght@0,400;1,400;1,700&family=Roboto:ital,wght@0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="portfolio-icon" id="portfolioIcon"><i class="fas fa-briefcase"></i></div>
+        <ul class="navbar-links" id="navbarLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="navbar-toggle" onclick="toggleNavbar()">☰</div>
+    </nav>
+    <div class="intro" id="home">
+        <div>
+            <h1 class="name">Kalpesh Gunjal</h1>
+            <p class="para">Transforming Ideas into Interactive Designs</p>
+            <div class="social-media-icons">
+                <a href="https://github.com/Kalpeshgunjal07" target="_blank" class="icon github"><i class="fab fa-github"></i></a>
+                <a href="mailto:kalpeshgunjal07@gmail.com" class="icon email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/kalpesh-gunjal-13275a226" target="_blank" class="icon linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/kalpeshgunjal_" target="_blank" class="icon instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <img src="/photos/KalpeshLast.png" class="photo" alt="Profile">
+    </div>
+    <div class="about" id="about">
+        <div class="abt">
+            <h2>About Me</h2>
+            <p class="bio">Dedicated Information Technology graduate passionate about developing efficient, user-friendly applications. Specializing in web development using ReactJS and Node.js, with additional expertise in JavaScript, HTML, CSS, and SQL. I enjoy turning ideas into interactive, accessible digital experiences.</p>
+            <div class="about-details">
+                <div class="skills">
+                    <h3><i class="fa-solid fa-brain"></i> Key Skills</h3>
+                    <ul class="skills-list">
+                        <li><strong>Programming Languages:</strong> JavaScript, Java, Python</li>
+                        <li><strong>Web Development:</strong> ReactJS, Node.js, HTML, CSS</li>
+                        <li><strong>Database Management:</strong> MySQL</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <p>Bachelor of Engineering in Information Technology,<br> Mahatma Gandhi Mission's College of Engineering and Technology, Navi Mumbai.</p>
+                </div>
+                <div class="address">
+                    <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
+                    <p>Navi Mumbai, Maharashtra, India</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills-section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box"><img src="/photos/react.png" class="skill-icon" alt="React Icon"><p>ReactJS</p></div>
+            <div class="skill-box"><img src="/photos/node.png" class="skill-icon" alt="NodeJS Icon"><p>Node.js</p></div>
+            <div class="skill-box"><img src="/photos/js.png" class="skill-icon" alt="JavaScript Icon"><p>JavaScript</p></div>
+            <div class="skill-box"><img src="/photos/java.png" class="skill-icon" alt="Java Icon"><p>Java</p></div>
+            <div class="skill-box"><img src="/photos/python.png" class="skill-icon" alt="Python Icon"><p>Python</p></div>
+            <div class="skill-box"><img src="/photos/html.png" class="skill-icon" alt="HTML Icon"><p>HTML</p></div>
+            <div class="skill-box"><img src="/photos/css1.png" class="skill-icon" alt="CSS Icon"><p>CSS</p></div>
+            <div class="skill-box"><img src="/photos/sql.png" class="skill-icon" alt="SQL Icon"><p>SQL</p></div>
+        </div>
+    </div>   
+    <div class="projects" id="project">
+        <h2>Projects</h2>
+        <div class="projects-container">
+            <div class="project-box"><img src="/photos/task.png" alt="Task Management System" class="project-image"><h3>Task Management System</h3><p>React-based app for efficient task management and helping individuals (CRUD).</p><div class="project-buttons"><a href="https://react-task-management-system.vercel.app/" target="_blank" class="btn demo-btn">Demo</a><a href="https://github.com/Kalpeshgunjal07/React-Task-Management-System" target="_blank" class="btn github-btn">GitHub</a></div></div>
+            <div class="project-box"><img src="/photos/commerce2.png" alt="E-commerce Platform React" class="project-image"><h3>E-commerce Platform React</h3><p>React-based e-commerce platform for seamless shopping and intuitive product browsing.</p><div class="project-buttons"><a href="https://react-ecomerce-web-site.vercel.app/" target="_blank" class="btn demo-btn">Demo</a><a href="https://github.com/Kalpeshgunjal07/React-Ecomerce-WebSite" target="_blank" class="btn github-btn">GitHub</a></div></div>
+            <div class="project-box"><img src="/photos/blog.png" alt="Blog Website USing Node.js and Firebase" class="project-image"><h3>Blog Website-Node.js and Firebase</h3><p>Blogging platform with HTML, CSS, JavaScript, Node.js, and Firebase for creating blog.</p><div class="project-buttons"><a href="https://drive.google.com/file/d/1hXRaDPoXkEvGWGMIjbjoEZgrvLaR89Bh/view?usp=sharing" target="_blank" class="btn demo-btn">Demo</a><a href="https://github.com/Kalpeshgunjal07/Blogging-Site-Node.js" target="_blank" class="btn github-btn">GitHub</a></div></div>
+            <div class="project-box"><img src="/photos/trip.png" alt="TRIP BOOKING WEBPAGE" class="project-image"><h3>Trip Booking webpage-Html Css Js</h3><p>A dynamic trip booking webpage built on html css js with booking & add Customer details form</p><div class="project-buttons"><a href="https://trip-booking-webpage.vercel.app/" target="_blank" class="btn demo-btn">Demo</a><a href="https://github.com/Kalpeshgunjal07/TRIP-BOOKING-WEBPAGE" target="_blank" class="btn github-btn">GitHub</a></div></div>
+            <div class="project-box"><img src="/photos/fine.jpg" alt="Fine Dine Service" class="project-image"><h3>Fine Dine Service using html css & js</h3><p>A website for booking breakfast, lunch, dinner, and snacks, with customer reviews.</p><div class="project-buttons"><a href="https://fine-dine-frontend-project.vercel.app/" target="_blank" class="btn demo-btn">Demo</a><a href="https://github.com/Kalpeshgunjal07/FINE-DINE-FRONTEND-PROJECT" target="_blank" class="btn github-btn">GitHub</a></div></div>
+        </div>
+    </div>
+    <div class="contact-section" id="contact">
+        <h2>Contact Me</h2>
+        <p>Let's connect! Feel free to reach out via social media or directly by phone.</p>
+        <div class="contact-links">
+            <a href="tel:+917208783587" class="contact-icon"><i class="fas fa-phone"></i> +91-7208783587</a>
+            <a href="https://github.com/kalpeshgunjal07" target="_blank" class="contact-icon"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/kalpesh-gunjal-13275a226" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:kalpeshgunjal07@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i>Mail-me</a>
+            <a href="https://instagram.com/kalpeshgunjal_" target="_blank" class="contact-icon"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+        <div class="resume-button">
+            <a href="https://drive.google.com/file/d/1X1EMkDCiHHwllybroW5cy-D4In8lzGyI/view?usp=sharing" target="_blank" download><button>View & Download Resume</button></a>
+        </div>
+    </div>
+    <script>
+        function toggleNavbar() {
+            const navbarLinks = document.getElementById('navbarLinks');
+            navbarLinks.classList.toggle('active');
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
